@@ -1,0 +1,11 @@
+.c-input {
+
+  all: unset;
+  background-color: var(--font-color);
+  color: black;
+  border-radius: 0.8rem;
+  height: 5.2rem;
+  width: 100%;
+  padding: 1.4rem 1.8rem;
+
+}

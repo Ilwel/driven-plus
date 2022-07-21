@@ -1,0 +1,18 @@
+.l-sign-in {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40rem;
+
+}
+
+.l-sign-in img {
+  margin-bottom: 10rem
+}
+
+.l-sign-in p {
+
+  margin-top: 2.4rem;
+
+}
