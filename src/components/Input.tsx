@@ -1,4 +1,5 @@
 import './Input.css'
+import InputMask from 'react-input-mask'
 
 export interface IPropsInput {
   type: string;
@@ -6,6 +7,15 @@ export interface IPropsInput {
 }
 
 const Input = (props: IPropsInput) => {
+  if (props.placeholder === 'CPF') {
+    return (
+      <InputMask
+        mask='999.999.999-99'
+        {...props}
+        className='c-input'
+      />
+    )
+  }
   return (
 
     <input
