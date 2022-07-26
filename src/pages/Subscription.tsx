@@ -5,6 +5,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { ApiService } from '../services/ApiService';
 import { UserService } from '../services/UserService';
 import listLogo from '../assets/list.svg'
+import priceLogo from '../assets/price.svg'
 import Input from '../components/Input';
 import Button from '../components/Button';
 import ModalPlan from '../components/ModalPlan'
@@ -54,7 +55,7 @@ const Subscription = () => {
         <p key={perk.id} >{index + 1}. {perk.title}</p>
       ))}
       <div className="profit">
-        <img src={listLogo} alt="" />
+        <img src={priceLogo} alt="" />
         <p> Preço:</p>
       </div>
       <p>R$ {plan.price} cobrados mensalmente</p>
