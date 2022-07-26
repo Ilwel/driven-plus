@@ -2,28 +2,45 @@ import './SignUp.css'
 import Button from '../components/Button';
 import Container from '../components/Container';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import { ApiService } from '../services/ApiService';
 
 const SignUp = () => {
+  const [name, setName] = useState('')
+  const [cpf, setCpf] = useState('')
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+
+  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    //handle
+    e.preventDefault()
+    const data = await ApiService.signUp(name, cpf, email, password)
+  }
+
   return (
-    <div className='l-sign-up'>
+    <form onSubmit={e => onSubmit(e)} className='l-sign-up'>
       <Container
         inputs={
           [
             {
               type: 'text',
-              placeholder: 'Nome'
+              placeholder: 'Nome',
+              set: setName
             },
             {
               type: 'text',
-              placeholder: 'CPF'
+              placeholder: 'CPF',
+              set: setCpf
             },
             {
               type: 'email',
-              placeholder: 'Email'
+              placeholder: 'Email',
+              set: setEmail
             },
             {
               type: 'password',
-              placeholder: 'Senha'
+              placeholder: 'Senha',
+              set: setPassword
             }
           ]
         }
@@ -32,7 +49,7 @@ const SignUp = () => {
         name='Cadastrar'
       />
       <p>Já possui conta? <Link to='/'> Entre</Link></p>
-    </div>
+    </form>
   );
 };
 

@@ -1,12 +1,8 @@
-.l-sign-up {
+.l-subs {
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 40rem;
+  gap: 1rem;
 
-}
-
-.l-sign-up p {
-  margin-top: 2.4rem;
 }

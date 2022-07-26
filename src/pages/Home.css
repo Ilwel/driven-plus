@@ -11,8 +11,31 @@
 
 .l-home h2 {
 
-  margin-top: 9.5rem;
+  margin-top: 20rem;
 
+}
+
+.l-home .plan-logo {
+
+  position: absolute;
+  top: 4.2rem;
+  left: 4.2rem;
+  height: 10rem;
+
+}
+
+.l-home a {
+  width: 100%;
+}
+
+.l-home .c-button {
+
+  width: 40rem;
+
+}
+
+.l-home a:hover {
+  color: white;
 }
 
 .l-home .user-logo {
@@ -27,7 +50,7 @@
 .l-home .bottom-buttons {
 
   position: absolute;
-  bottom: 3rem;
+  bottom: 10rem;
   display: flex;
   flex-direction: column;
   align-items: center;

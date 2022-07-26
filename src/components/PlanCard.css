@@ -1,0 +1,11 @@
+.c-plan-card {
+
+  display: flex;
+  align-items: center;
+  gap: 2.1rem;
+  padding: 3.5rem 1.6rem;
+  border: 3px solid #7E7E7E;
+  border-radius: 1.2rem;
+  cursor: pointer;
+
+}

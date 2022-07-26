@@ -14,6 +14,7 @@ const Container = (props: IPropsContainer) => {
         <Input
           type={input.type}
           placeholder={input.placeholder}
+          set={input.set}
         />
       ))}
     </div>

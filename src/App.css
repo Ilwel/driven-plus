@@ -13,6 +13,8 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -35,6 +37,46 @@ a:hover {
   height: 100vh;
   width: 100%;
   font-size: 2rem;
+
+}
+
+.c-modal {
+
+  height: 100%;
+  width: 100%;
+  top: 0;
+  position: absolute;
+  background-color: black;
+  opacity: 0.7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.c-card {
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  height: 40%;
+  width: 80%;
+  opacity: 1;
+  text-align: center;
+}
+
+.c-card .buttons {
+
+  margin-top: 4.7rem;
+  display: flex;
+  gap: 1rem;
+
+}
+
+.c-card .c-button {
+
+  height: 5.2rem;
 
 }
 
