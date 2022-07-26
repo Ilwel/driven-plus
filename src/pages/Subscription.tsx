@@ -37,8 +37,9 @@ const Subscription = () => {
     const user = UserService.getUser()
     const { token } = user
     const data = await ApiService.postPlan(Number(id), cardName, cardNumber, Number(cvv), validDate, token)
-    navigate('/')
-
+    user.membership = data.membership
+    UserService.setUser(user)
+    navigate('/home')
   }
 
   const handleModal = () => { setModal(true) }

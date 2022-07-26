@@ -8,4 +8,9 @@ export class UserService{
     return userParse
   }
 
+  public static setUser(user:IUser){
+    const userJson = JSON.stringify(user)
+    localStorage.setItem('user', userJson)
+  }
+
 }
